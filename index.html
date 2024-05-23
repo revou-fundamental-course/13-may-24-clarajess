@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Matematik Segitiga</h1>
+        <img src="luas.jpg2.jpg" alt="Triangle Image">
+
+        <!-- Form to input triangle sides -->
+        <form id="segitigaForm">
+            <div class="form-group">
+                <label for="sisiA">Sisi A:</label>
+                <input type="number" id="sisiA" name="sisiA" required>
+            </div>
+            <div class="form-group">
+                <label for="sisiB">Sisi B:</label>
+                <input type="number" id="sisiB" name="sisiB" required>
+            </div>
+            <div class="form-group">
+                <label for="sisiC">Sisi C:</label>
+                <input type="number" id="sisiC" name="sisiC" required>
+            </div>
+            <button type="submit">Hitung</button>
+        </form>
+
+        <!-- Result display -->
+        <div id="result" class="result" style="display:none;">
+            <h2>Hasil:</h2>
+            <p id="keliling"></p>
+            <p id="luas"></p>
+        </div>
+
+        <!-- Formulas for calculating area and perimeter of the triangle -->
+        <div class="rumus">
+            <h3>K = Sisi A + Sisi B + Sisi C</h3>
+            <h3>L = 0.5 * a * t </h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
